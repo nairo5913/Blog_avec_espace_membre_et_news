@@ -1,0 +1,89 @@
+/******************************************************************************
+ * Nom :       Navigation.css
+ * Projet :    Mon site de blog et de news
+ * Objectif :  Mise en page de la barre de navigation
+ * Créé le :   24/02/2018
+ * Auteur :    nairo5913
+******************************************************************************/
+nav
+{
+    background-color: #333333;
+
+    /** Marge **/
+    margin: auto;
+    margin-top: 1%;
+    padding: 0;
+
+    /** Taille **/
+    width: 70%;
+
+    /*border-style: solid;
+    border-color: black;
+    border-width: 3px;*/
+}
+
+nav ul
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li
+{
+    /*display: block;*/
+    display: inline;
+}
+
+nav li a, .menu_deroulanttn
+{
+    display: inline-block;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover, .menu_deroulant:hover .menu_deroulanttn
+{
+    background-color: #FF0000;
+}
+
+nav li.menu_deroulant
+{
+    display: inline-block;
+}
+
+.contenu_menu_deroulant
+{
+    display: none;
+    position: absolute;
+    background-color: #F9F9F9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.contenu_menu_deroulant a
+{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+.contenu_menu_deroulant a:hover
+{
+    background-color: #F1F1F1;
+}
+
+.menu_deroulant:hover .contenu_menu_deroulant, .menu_deroulant:active .contenu_menu_deroulant
+{
+    display: block;
+}
+
+nav a
+{
+
+}

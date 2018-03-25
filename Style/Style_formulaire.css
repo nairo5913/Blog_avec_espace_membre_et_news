@@ -1,0 +1,345 @@
+/******************************************************************************
+ * Nom :       Style_formulaire.css
+ * Projet :    Mon site de blog et de news
+ * Objectif :  Mise en page des formulaire du site
+ * Créé le :   24/02/2018
+ * Auteur :    nairo5913
+******************************************************************************/
+/*Police*/
+@font-face
+{
+    font-family: 'HackedCRT';
+    src: url('Police/Hacked_crt/Hacked_CRT.ttf') format('truetype')
+}
+
+@font-face
+{
+    font-family: 'IDroid';
+    src: url('Police/IDroid/IDroid.otf')
+}
+
+button
+{
+    cursor: pointer;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+
+.bouton_conteneur
+{
+    position: relative;
+}
+
+.bouton_conteneur button
+{
+    /* Taille */
+    height: 60px;
+    width: 200px;
+
+    /* texte */
+    color: #222222;
+    font-family: Sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+
+    /* Fond */
+    background-color: #2196F3;
+
+    cursor: pointer;
+
+    /* Marges */
+    padding: 10px 20px;
+
+    /* Bords */
+    border-style: none;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+
+    outline: none;
+}
+
+.bouton_conteneur button span
+{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.bouton_conteneur button span:after
+{
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.bouton_conteneur button:hover span
+{
+    padding-right: 25px;
+}
+
+.bouton_conteneur button:hover span:after
+{
+    opacity: 1;
+    right: 0;
+}
+
+.bouton_modifier_contenu
+{
+    position: relative;
+    padding: 20px 0;
+    margin: 20px 0 10px 0;
+}
+
+.bouton_modifier
+{
+    /* Couleurs */
+    background-color: blue;
+    color: white;
+
+    /* Bords */
+    /*border-style: none;*/
+    border-style: solid;
+    border-color: blue;
+    border-width: 2px;
+    -moz-border-radius: 30px;
+    -webkit-border-radius: 30px;
+    border-radius: 30px;
+
+    padding: 25px 40px;
+
+    /* Animation */
+    transition-duration: 0.5s;
+
+    /* Position */
+    position: absolute;
+    left: 43%;
+    top: 0;
+}
+
+.bouton_modifier:hover
+{
+    background-color: grey;
+    color: black;
+}
+
+fieldset
+{
+    /*text-align: center;*/
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    margin: 20px 5px;
+    padding: 40px 50px;
+    position: relative;
+}
+
+form
+{
+
+}
+
+input
+{
+    color: #222222;
+    background-color: #EFEFEF;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    padding: 10px 15px;
+    width: 30%;
+}
+
+input:valid
+{
+    /*border: 2px red groove;*/
+    border-color: green;
+    border-style: groove;
+    border-width: 2px;
+}
+
+input[type=date]:disabled
+{
+    color: #222222;
+}
+
+input[type=button], input[type=submit], input[type=reset]
+{
+    /*border: none;*/
+    border-style: inset;
+    border-color: #7F7F7F;
+    border-width: 3px;
+    background-color: #AFAFAF;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+
+    font-family: IDroid;
+    font-size: 0.80em;
+    font-style: normal;
+
+    cursor: pointer;
+    margin: 10px 3px;
+    width: auto;
+}
+
+input[type=checkbox]
+{
+    margin: 5px;
+    height: 15px;
+    width: 15px;
+    width: auto;
+}
+
+input:checked
+{
+    height: 25px;
+    width: 25px;
+}
+
+input:invalid
+{
+    /*border: 2px red groove;*/
+    border-color: red;
+    border-style: groove;
+    border-width: 2px;
+}
+
+input:required
+{
+    background-color: #FFF1CD;
+}
+
+input:disabled
+{
+    background-color: #AAAAAA;
+    border-color: grey;
+    border-style: solid;
+    border-width: 2px;
+    /*cursor: not-allowed;*/
+    cursor: no-drop;
+}
+
+input:disabled:required
+{
+    color: #222222;
+    background-color: #FFF1CD;
+}
+
+
+input:focus
+{
+    background-color: lightblue;
+    border-color: #555555;
+    border-style: solid;
+    border-width: 3px;
+}
+
+input[type=button]:focus, input[type=submit]:focus, input[type=reset]:focus
+{
+    /* Bordures */
+    border-style: inset;
+    border-color: #7F7F7F;
+    background-color: #AFAFAF;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+
+    /* Polices */
+    font-family: IDroid;
+    font-size: 0.85em;
+    font-style: normal;
+
+    /* Marges */
+    margin: 10px 3px;
+}
+
+label
+{
+    font-family: IDroid;
+    font-size: 0.85em;
+    font-style: normal;
+    vertical-align: middle;
+    text-align: justify;
+}
+
+legend
+{
+    /*font-family: Arial Black, impact;*/
+    font-family: HackedCRT;
+    font-size: 0.9em;
+    /*font-weight: normal;*/
+    text-align: center;
+    text-transform: uppercase;
+}
+
+select
+{
+    color: #222222;
+    background-color: #EFEFEF;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    padding: 10px 15px;
+    text-align: center;
+    width: 30%;
+}
+
+select
+{
+    cursor: no-drop;
+}
+
+textarea
+{
+    /* Couleurs */
+    color: #222222;
+    background-color: #EFEFEF;
+    /* Bords */
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -khtml-border-radius: 20px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    /* Marges */
+    padding: 10px 15px;
+    /* Taille */
+    height: 100px;
+    width: 30%;
+    /*resize: none;*/
+}
+
+textarea:disabled
+{
+    background-color: #AAAAAA;
+    border-color: grey;
+    border-style: solid;
+    border-width: 2px;
+    /*cursor: not-allowed;*/
+    cursor: no-drop;
+}
+
+.erreur
+{
+    color: #FF0000;
+}
+
+.erreur h2
+{
+    letter-spacing: 3px;
+    text-transform: capitalize;/*uppercase;*/
+    text-align: left;
+    text-decoration: underline;
+    text-indent: 0;
+}
+
+.erreur p
+{
+    text-indent: 80px;
+}

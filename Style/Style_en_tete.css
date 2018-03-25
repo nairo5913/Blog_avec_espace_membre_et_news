@@ -1,0 +1,170 @@
+/******************************************************************************
+ * Nom :       Style_en_tete.css
+ * Projet :    Mon site de blog et de news
+ * Objectif :  Mise en page de l'en-tête (header)
+ * Créé le :   24/02/2018
+ * Auteur :    nairo5913
+******************************************************************************/
+header
+{
+    /** Bordure **/
+    border-style: solid;
+    border-width: 2px;
+    border-color: #BFBFBF;
+    -moz-border-radius: 95px;
+    -webkit-border-radius: 95px;
+    border-radius: 95px;
+
+    /** Marge **/
+    margin: auto;
+
+    /** Taille **/
+    width: 70%;
+    height: 40%;
+    min-height: 230px;
+
+    /** Fond **/
+    /*background-color: #5F5F5F;*/
+    background-color: #7F7F7F;
+    /*background-color: #3F3F3F;*/
+    position: relative;
+
+}
+
+header h1
+{
+    /** Ombre **/
+    /** @type {text-shadow} [décalage horizontal, décalage vertical, couleur] */
+    text-shadow: 4px 2px #ffff00;
+}
+
+.logo_retour_acceuil
+{
+    position: absolute;
+    /*display: inline-block;*/
+    left: 0;
+    top: 60px;
+    margin: 10px;
+    max-height: 120px;
+
+}
+
+.titre_en_tete
+{
+    position: absolute;
+    left: 160px;
+    top: 80px;
+    margin: 0;
+    padding: 0;
+}
+
+.bouton_en_tete
+{
+    position: absolute;
+    right: 0;
+    top: 90px;
+    margin: 0;
+    padding: 0;
+    width: 340px;
+}
+
+.bouton_en_tete button
+{
+    /* Taille */
+    height: 60px;
+    width: 160px;
+
+    /* texte */
+    color: #222222;
+    font-family: Sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+
+    /* Fond */
+    background-color: #47AD59;
+
+    cursor: pointer;
+
+    /* Marges */
+    padding: 10px 20px;
+
+    /* Bords */
+    border-style: none;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+
+    outline: none;
+
+    /* Ombre */
+    box-shadow: 0 14px #999
+}
+
+.bouton_en_tete button:hover
+{
+    background-color: #477B59;
+}
+
+.bouton_en_tete button:active
+{
+    background-color: #477B59;
+    box-shadow: 0 6px #666;
+    transform: translateY(4px);
+}
+
+.bouton_en_tete_deconnexion
+{
+    position: absolute;
+    right: 0;
+    top: 90px;
+    margin: 0;
+    margin-right: 10px;
+    padding: 0;
+    width: 160px;
+}
+
+.bouton_en_tete_deconnexion button
+{
+    /* Taille */
+    height: 60px;
+    width: 160px;
+
+    /* texte */
+    color: #222222;
+    font-family: Sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+
+    /* Fond */
+    background-color: #FF982E;
+
+    cursor: pointer;
+
+    /* Marges */
+    padding: 10px 20px;
+
+    /* Bords */
+    border-style: none;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+
+    outline: none;
+
+    /* Ombre */
+    box-shadow: 0 14px #999;
+}
+
+.bouton_en_tete_deconnexion button:hover
+{
+    background-color: #CC760C;
+}
+
+.bouton_en_tete_deconnexion button:active
+{
+    background-color: #CC760C;
+    box-shadow: 0 6px #666;
+    transform: translateY(4px);
+}

@@ -1,0 +1,110 @@
+/******************************************************************************
+ * Nom :       Style_general.css
+ * Projet :    Mon site de blog et de news
+ * Objectif :  Mise en page général du site
+ * Créé le :   24/02/2018
+ * Auteur :    nairo5913
+******************************************************************************/
+/*Police*/
+@font-face
+{
+    font-family: 'ArefRuqaa_Regular';
+    src: url('Police/Aref_Ruqaa/ArefRuqaa-Regular.ttf') format('truetype')
+}
+
+@font-face
+{
+    font-family: 'Oswald_Regular';
+    src: url('Police/Oswald/Oswald-Regular.ttf') format('truetype')
+}
+
+@font-face
+{
+    font-family: 'Oswald_Bold';
+    src: url('Police/Oswald/Oswald-Bold.ttf') format('truetype')
+}
+
+@font-face
+{
+    font-family: 'Rye_Regular';
+    src: url('Police/Rye/Rye_Regular.ttf') format('truetype')
+}
+
+body
+{
+    background: linear-gradient(to top left, #00CCFF 0%, #FFFF00 100%);
+    /*margin: auto;
+    width: auto;*/
+}
+
+Section
+{
+    margin: auto;
+    width: 70%;
+}
+
+section h1
+{
+    /*font-family: Arial Black, impact;*/
+    font-family: Rye_Regular;
+    font-weight: normal;
+    font-size: 1.6em;
+    text-transform: uppercase;
+}
+
+section h2
+{
+    font-family: Oswald_Regular;
+    font-weight: normal;
+    font-size: 1.3em;
+}
+
+article
+{
+    background-color: #FFFFFF;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    margin: 10px 0;
+    padding: 5px 10px;
+    /*position: relative;*/
+    /*width: 70%;*/
+
+}
+
+article p
+{
+    font-family: ArefRuqaa_Regular;
+    font-size: 1.3em;
+    text-align: justify;
+}
+
+.deconnexion_succes
+{
+    text-align: center;
+    margin-top: 250px;
+    margin-bottom: 250px;
+    vertical-align: middle;
+}
+
+h1
+{
+    text-align: center;
+    text-decoration: underline;
+}
+
+/*** Lien cliquable ***/
+a
+{
+
+}
+
+a:hover
+{
+
+}
+
+a:visited
+{
+
+}
